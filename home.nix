@@ -32,6 +32,38 @@
     starship = {
       enable = true;
       enableZshIntegration = true;
+      settings = {
+        docker_context = {
+          symbol = " ";
+        };
+        git_branch = {
+          symbol = " ";
+        };
+        golang = {
+          symbol = " ";
+        };
+        java = {
+          symbol = " ";
+        };
+        kubernetes = {
+          symbol = "ﴱ ";
+        };
+        nix_shell = {
+          symbol = " ";
+        };
+        nodejs = {
+          symbol = " ";
+        };
+        package = {
+          symbol = " ";
+        };
+        python = {
+          symbol = " ";
+        };
+        terraform = {
+          symbol = "  ";
+        };
+      };
     };
 
     bat.enable = true;
