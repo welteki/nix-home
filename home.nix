@@ -14,6 +14,27 @@
       enable = true;
       userName = "Han Verstraete";
       userEmail = "welteki@pm.me";
+      aliases = {
+        co = "checkout";
+        ci = "commit";
+        cia = "commit --amend";
+        st = "status";
+        b = "branch";
+        pu = "push";
+      };
+      ignores = [
+        # macOS.gitignore source:https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+        # General
+        ".DS_Store"
+        ".AppleDouble"
+        ".LSOverride"
+
+        # Thumbnails
+        "._*"
+      ];
+      extraConfig = {
+        init.defaultBranch = "main";
+      };
     };
     
     zsh = {
