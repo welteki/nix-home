@@ -58,7 +58,6 @@
           . ~/.nix-profile/etc/profile.d/nix.sh;
           export NIX_PATH=$HOME/.nix-defexpr/channels''${NIX_PATH:+:}$NIX_PATH
         fi # added by Nix installer
-        . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
         '';
     };
 
