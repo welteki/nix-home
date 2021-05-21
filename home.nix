@@ -9,6 +9,11 @@
   home.username = "han";
   home.homeDirectory = "/users/han";
 
+  home.packages = with pkgs; [
+    # Ensure at least bash v4 on macOS for zsh-nix-shell - https://github.com/chisui/zsh-nix-shell/issues/14
+    bash
+  ];
+
   programs = {
     git = {
       enable = true;
@@ -50,6 +55,16 @@
             repo = "zsh-syntax-highlighting";
             rev = "0.7.1";
             sha256 = "03r6hpb5fy4yaakqm3lbf4xcvd408r44jgpv4lnzl9asp4sb9qc0";
+          };
+        }
+        {
+          name = "zsh-nix-shell";
+          file = "nix-shell.plugin.zsh";
+          src = pkgs.fetchFromGitHub {
+            owner = "chisui";
+            repo = "zsh-nix-shell";
+            rev = "v0.2.0";
+            sha256 = "1gfyrgn23zpwv1vj37gf28hf5z0ka0w5qm6286a7qixwv7ijnrx9";
           };
         }
       ];
