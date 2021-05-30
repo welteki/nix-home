@@ -120,6 +120,7 @@
     };
 
     bat.enable = true;
+    jq.enable = true;
   };
 
   # This value determines the Home Manager release that your
