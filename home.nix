@@ -26,6 +26,8 @@
         b = "branch";
         pu = "push";
         mff = "merge --ff-only";
+        l = "log";
+        lo = "log --oneline";
       };
       ignores = [
         # macOS.gitignore source:https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
