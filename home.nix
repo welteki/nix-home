@@ -80,7 +80,8 @@
 
     direnv = {
       enable = true;
-      enableNixDirenvIntegration = true;
+      nix-direnv.enable = true;
+      nix-direnv.enableFlakes = true;
     };
 
     starship = {
