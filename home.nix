@@ -22,6 +22,7 @@
         co = "checkout";
         ci = "commit";
         cia = "commit --amend";
+        sci = "commit -S";
         st = "status";
         b = "branch";
         pu = "push";
