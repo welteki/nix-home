@@ -23,6 +23,7 @@
         ci = "commit";
         cia = "commit --amend";
         sci = "commit -S";
+        scia = "commit -S --amend";
         st = "status";
         b = "branch";
         pu = "push";
