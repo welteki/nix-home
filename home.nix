@@ -123,6 +123,7 @@
       };
     };
 
+    gh.enable = true;
     bat.enable = true;
     jq.enable = true;
   };
