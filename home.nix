@@ -5,8 +5,8 @@
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "han";
-  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/han" else "/home/han";
+  home.username = "welteki";
+  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/welteki" else "/home/welteki";
 
   home.packages = with pkgs; [] ++ lib.optionals stdenv.isDarwin [
     # Ensure at least bash v4 on macOS for zsh-nix-shell - https://github.com/chisui/zsh-nix-shell/issues/14
