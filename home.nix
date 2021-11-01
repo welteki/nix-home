@@ -116,6 +116,10 @@
     gh.enable = true;
     bat.enable = true;
     jq.enable = true;
+    exa = {
+      enable = true;
+      enableAliases = true;
+    };
   };
 
   # This value determines the Home Manager release that your
